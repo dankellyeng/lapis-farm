@@ -38,6 +38,7 @@ const FarmCards: FC<Props> = ({ ...props }) => {
 
         return (
           <FarmCard
+            key={farm.id}
             name={farm.name}
             website={farm.website}
             address={farm.address}
