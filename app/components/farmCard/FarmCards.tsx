@@ -12,11 +12,11 @@ interface Props {
 }
 
 const FarmCards: FC<Props> = ({ ...props }) => {
+  const count = useAppSelector((state: any) => state.counterReducer.value);
+  const dispatch = useAppDispatch();
   if (!props) {
     return;
   }
-  const count = useAppSelector((state: any) => state.counterReducer.value);
-  const dispatch = useAppDispatch();
   return (
     <div className={farmCard.allCards}>
       <div className={farmCard.numberButtons}>

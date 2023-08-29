@@ -20,8 +20,6 @@ export default async function Home() {
   const data = await fetchEntries();
   // let projects = data.items;
 
-  if (!data) return;
-
   return (
     <div className={page.fullPage}>
       <div className={page.page}>
