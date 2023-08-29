@@ -1,0 +1,47 @@
+@import "../../../styles/styles.scss";
+
+$color-primary: #ffffff;
+
+.card {
+  width: 100%;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  padding: 15px;
+  @include devices(mobile) {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.image {
+  align-self: center;
+}
+
+.allCards {
+  width: 100%;
+}
+
+.numberButtons {
+  padding: 5px;
+  padding-top: 15px;
+}
+
+.cardDetails {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 15px;
+  gap: 5px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.information {
+  font-style: italic;
+}
